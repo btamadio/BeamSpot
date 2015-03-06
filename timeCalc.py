@@ -10,6 +10,12 @@
 #Centers of bunches coincide at z=0,t=0
 
 #TODO: Normalization (integrate over z,t)
+
+#Example usage:
+#a = timeCalc(0.01,0.05)
+#a.get1D(0.01).Draw()
+
+
 import os,sys
 from ROOT import *
 from math import *
@@ -41,6 +47,3 @@ class timeCalc:
         self._func1.SetParameter(3,z)
         return self._func1
 
-#Example usage:
-a = timeCalc(0.01,0.05)
-a.get1D(0.01).Draw()
